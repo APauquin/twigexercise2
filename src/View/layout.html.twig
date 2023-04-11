@@ -14,9 +14,17 @@
 		<link rel="icon" href="/assets/images/favicon.png">
 	</head>
 
-	<body>
-		{% block content %}
-			{% include 'navbar.html.twig' %}
+	<navbar>
+		{% block nav%}
+			<ul>
+				<li>home</li>
+				<li>aboot</li>
+				<li>proute</li>
+			</ul>
 		{% endblock %}
+	</navbar>
+
+	<body>
+		{% block content %}{% endblock %}
 	</body>
 </html>
